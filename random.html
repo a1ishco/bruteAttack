@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Layihələr</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="brute.html">BruteForce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="random.html">Random Şifrə Generasiyası</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="card">
+    <div class="cont">
+            <h2 class="title">Random Password Generator</h2>
+            <div class="result">
+                <div class="result__info right">kopyalamaq</div>
+                <div class="result__info left">kopyalandı</div>
+                <div class="result__viewbox" id="result"> </div>
+                <button id="copy-btn" style="--x: 0; --y: 0"><i class="far fa-copy"></i></button>
+            </div>
+            <div class="length range__slider" data-min="4" data-max="16">
+                <div class="length__title field-title" data-length='0'>uzunluq:</div>
+                <input id="slider" type="range" min="4" max="16" value="8" />
+            </div>
+        
+            <div class="settings">
+                <span class="settings__title field-title">seçimlər</span>
+                <div class="setting">
+                    <input type="checkbox" id="uppercase" checked />
+                    <label for="uppercase">Böyük Hərf</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="lowercase" checked />
+                    <label for="lowercase">Kiçik Hərf</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="number" checked />
+                    <label for="number">Rəqəmlər</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="symbol" />
+                    <label for="symbol">Simvollar</label>
+                </div>
+        
+            <button class="btn generate" id="generate">Password Generasiyası</button>
+        </div>
+        
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+  <script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../Bootstrap/js/bootstrap.min.js"></script>
+  <script src="generate.js"></script>
+</body>
+
+</html>

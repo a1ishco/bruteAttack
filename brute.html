@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Layihələr</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="brute.html">BruteForce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="random.html">Random Şifrə Generasiyası</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="card">
+    <div class="cont">
+      <form>
+        <h4>Brute Force şifrə hücumu</h4>
+
+        <h5>Şifrəni daxil edin:</h5>
+        <div class="workPlace">
+          <input type="text" id="inputArea" class="input" value="">
+          <button class="btn" id="butn" onclick="visibleCode()">Bruteforce</button>
+        </div>
+
+      </form>
+      <div id="codes">
+        <div id="res" class="result"></div>
+        <div id="tim" class="time"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+  <script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../Bootstrap/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
